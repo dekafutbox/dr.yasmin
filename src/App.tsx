@@ -84,23 +84,23 @@ export default function App() {
       author: "Jacy Rodrigues"
     },
     {
-      text: "Office specialized in granting benefits with a super qualified and attentive team. I was very well attended by Dra. Valéria, who was very solicitous and helpful, passing on all the necessary guidance.",
+      text: "Escritório especialista em concessão de benefícios e com uma equipe super qualificada e atenciosa. Fui muito bem atendido pela Dra. Valéria que foi muito solicita e prestativa, me repassando todas as orientações necessárias.",
       author: "Klesio Wesley"
     },
     {
-      text: "Reliable and highly professional office! Dra. Ana Valéria has absurd competence and charisma. I am very satisfied with the services provided.",
+      text: "Escritório confiável e altamente profissional! Dra. Ana Valéria é de uma competência e carisma absurdos. Estou bem satisfeita com os serviços prestados.",
       author: "Carla Juliana Borges"
     },
     {
-      text: "Great service! Dra. Thaís treated me very well, a great professional, got my benefit super fast! I highly recommend it!",
+      text: "Ótimo atendimento ! Dra. Thaís me atendeu super bem, uma ótima profissional, conseguiu meu benefício super rápido ! Recomendo demais !",
       author: "Alef Souza"
     },
     {
-      text: "Qualified professionals, professional and attentive team. Recommend!",
+      text: "Profissionais qualificados, equipe profissional e atenciosa. Recomendo!",
       author: "Ronnald Oliveira Santos"
     },
     {
-      text: "An office that enables quality and security in service, with a qualified team that knows how to correctly direct each case that arises. A place that advises at each stage of the process coherently according to demand.",
+      text: "Um escritório que possibilita qualidade e segurança no atendimento, com uma equipe qualificada e que sabe direcionar corretamente cada caso que surge. Um local que acessora em cada etapa do processo coerentemente de acordo com a demanda.",
       author: "Maria Clara Soares"
     }
   ];
@@ -180,11 +180,11 @@ export default function App() {
                 ))}
                 <li className="pt-4">
                   <a 
-                    href="#contato"
+                    href="#https://wa.me/5586988575404"
                     onClick={() => setMobileMenuOpen(false)}
                     className="bg-gold text-navy font-semibold text-center block px-6 py-4 rounded-sm uppercase tracking-wider"
                   >
-                    Agendar Consulta
+                    FALE CONOSCO
                   </a>
                 </li>
               </ul>
@@ -194,7 +194,7 @@ export default function App() {
       </header>
 
       {/* HERO SECTION */}
-      <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-light">
+      <section id="inicio" className="relative min-h-screen flex items-center pt-20 pb-20 md:pb-0 overflow-hidden bg-light">
         {/* Abstract Background Elements */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-navy/5 skew-x-12 translate-x-32"></div>
         <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-navy/10 to-transparent"></div>
@@ -205,7 +205,7 @@ export default function App() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeIn}
-            className="order-2 md:order-1 pt-12 md:pt-0"
+            className="order-2 md:order-1 pt-12 pb-12 md:pt-0 md:pb-0"
           >
             
             
@@ -593,7 +593,7 @@ export default function App() {
                 Dra. Yasmin Nery previdenciarista de alto padrão. Atendimento digital exclusivo para todo o Brasil.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-colors">
+                <a href="https://www.instagram.com/yasminnery.adv/" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-colors">
                   <Instagram className="w-4 h-4" />
                 </a>
                 <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-gold hover:bg-gold hover:text-navy transition-colors">
