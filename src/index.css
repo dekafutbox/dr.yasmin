@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #030045;
+  --color-gold: #D4AF37;
+  --color-gold-light: #E6C762;
+  --color-gold-dark: #997A15;
+  --color-light: #f8f9fa;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-light);
+  color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbar for a luxury feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-navy);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Hide scrollbar for carousel */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Infinite Marquee */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 12px)); }
+}
+@keyframes scroll-reverse {
+  0% { transform: translateX(calc(-50% - 12px)); }
+  100% { transform: translateX(0); }
+}
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
+.animate-scroll-reverse {
+  animation: scroll-reverse 40s linear infinite;
+}
+.pause-on-hover:hover {
+  animation-play-state: paused;
+}
